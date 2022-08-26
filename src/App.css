@@ -1,0 +1,130 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.expense-tracker-title {
+  font-size: 1.5rem;
+}
+
+
+.balance-container {
+  margin: 10px 0px;
+}
+.balance-title {
+  margin-bottom: 0;
+  font-size: .9rem;
+}
+.balance-amount {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+
+
+.income-expense-container {
+  display: flex;
+  background-color: white;
+  margin: 10px 0px;
+}
+.income, .expense {
+  padding: 5px 20px;
+  text-align: center;
+  box-shadow: 1px 1px 2px gray;
+  width: 100%;
+}
+.income-title, .income-amount,
+.expense-title, .expense-amount {
+  margin: 5px;
+  font-size: .9rem;
+}
+.income-amount {
+  color: green;
+}
+.expense-amount {
+  color: red;
+}
+
+
+.history-title {
+  margin: 10px 0px;
+  border-bottom: 1px solid gray;
+  padding: 3px 0px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight:800;
+}
+.history-container {
+  margin: 10px 0px;
+}
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 35px;
+  margin-bottom: 8px;
+  padding: 0px 10px;
+  position: relative;
+  font-size: .9rem;
+  box-shadow: 1px 1px 2px gray;
+}
+
+
+.new-transaction-section {
+  margin: 10px 0px;
+}
+.new-transaction-title {
+  font-size: 1rem;
+  border-bottom: 1px solid gray;
+  font-weight: 800;
+  margin-bottom: 10px;
+  padding: 3px 0px;
+}
+
+form > input {
+  width: 100%;
+}
+
+label > p {
+  margin: 3px 0px;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.item-name, .item-amount {
+  background-color: white;
+  border: 1px solid gray;
+  color: black;
+  font-size: .9rem;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px 3px;
+  width: 100%;
+}
+.item-name:focus, .item-amount:focus {
+  outline: none;
+}
+
+.transaction-btn {
+  background-color: purple;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: .9rem;
+  height: 30px;
+  padding: 5px 3px;
+  width: 100%;
+}
+.transaction-btn:hover {
+  background-color: rgb(160, 55, 160);
+}
